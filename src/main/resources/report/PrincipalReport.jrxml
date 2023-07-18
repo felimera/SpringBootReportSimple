@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PrincipalReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8f002478-0d0b-4b61-8c3b-f2492f69291a">
+	<parameter name="tituloReport" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="subreportParameter" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="salary" class="java.lang.String"/>
+	<field name="id" class="java.lang.Integer"/>
+	<pageHeader>
+		<band height="50">
+			<subreport>
+				<reportElement x="0" y="0" width="543" height="50" uuid="f625131b-6b68-4f83-81f6-4142e2370d77"/>
+				<dataSourceExpression><![CDATA[$P{subreportParameter}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{tituloReport}]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="51" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="e1e5e925-1b15-441e-bcb5-b5d85bf14693"/>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="1f26fc54-8087-4b6f-b5a9-d05da18300a5"/>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="320f56ed-fa17-4d23-bb7a-c38735c1fa60"/>
+				<textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
