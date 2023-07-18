@@ -1,9 +1,11 @@
 package com.example.report.service.report.implementation;
 
 import com.example.report.models.Employee;
+import com.example.report.models.Head;
 import com.example.report.models.entityreport.EmployeeReport;
 import com.example.report.models.entityreport.subreport.Cabecera;
 import com.example.report.service.EmployeeService;
+import com.example.report.service.HeadService;
 import com.example.report.service.report.EmployeeReportService;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -22,6 +24,8 @@ import java.util.Map;
 public class EmployeeReportServiceImpl implements EmployeeReportService {
     @Autowired
     EmployeeService employeeService;
+    @Autowired
+    HeadService headService;
 
     public EmployeeReport addEmployee() {
         Employee employee = employeeService.findEntity();
@@ -33,7 +37,8 @@ public class EmployeeReportServiceImpl implements EmployeeReportService {
     }
 
     public Cabecera addCabecera() {
-        return new Cabecera("Titulo de la cabecera");
+        Head head = headService.findEntity();
+        return new Cabecera(head.getTittle());
     }
 
     public JasperReport addJasperSubReport() {
