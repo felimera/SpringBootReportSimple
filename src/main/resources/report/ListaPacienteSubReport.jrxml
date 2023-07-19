@@ -85,7 +85,7 @@
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
                                 <reportElement x="0" y="0" width="54" height="30" uuid="74c1fc50-7dd0-4892-a969-18c8a966ccb4"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <textElement textAlignment="Center" verticalAlignment="Middle"/>
                                 <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -103,8 +103,13 @@
                         </jr:tableHeader>
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
-                                <reportElement x="0" y="0" width="54" height="30" uuid="99c68996-9955-4d34-80bd-b86caed952a7"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <reportElement x="0" y="0" width="54" height="30" uuid="99c68996-9955-4d34-80bd-b86caed952a7">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <textElement verticalAlignment="Middle">
+                                    <paragraph leftIndent="2" rightIndent="2"/>
+                                </textElement>
                                 <textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -122,8 +127,13 @@
                         </jr:tableHeader>
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
-                                <reportElement x="0" y="0" width="54" height="30" uuid="c5ef65ea-4622-41fd-810b-b4ae1ff1dd5c"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <reportElement x="0" y="0" width="54" height="30" uuid="c5ef65ea-4622-41fd-810b-b4ae1ff1dd5c">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <textElement verticalAlignment="Middle">
+                                    <paragraph leftIndent="2" rightIndent="2"/>
+                                </textElement>
                                 <textFieldExpression><![CDATA[$F{apellido}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -142,7 +152,7 @@
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
                                 <reportElement x="0" y="0" width="54" height="30" uuid="fea36dea-c3d4-4bd2-a69e-6da769c509d4"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <textElement textAlignment="Center" verticalAlignment="Middle"/>
                                 <textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -160,8 +170,13 @@
                         </jr:tableHeader>
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
-                                <reportElement x="0" y="0" width="54" height="30" uuid="3f927715-f136-41f8-aa6a-8163829ea061"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <reportElement x="0" y="0" width="54" height="30" uuid="3f927715-f136-41f8-aa6a-8163829ea061">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <textElement textAlignment="Center" verticalAlignment="Middle">
+                                    <paragraph leftIndent="2" rightIndent="2"/>
+                                </textElement>
                                 <textFieldExpression><![CDATA[$F{genero}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -179,8 +194,13 @@
                         </jr:tableHeader>
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
-                                <reportElement x="0" y="0" width="54" height="30" uuid="94fe13ab-c2d0-4efc-ba6a-a0a961c0621c"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <reportElement x="0" y="0" width="54" height="30" uuid="94fe13ab-c2d0-4efc-ba6a-a0a961c0621c">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <textElement verticalAlignment="Middle">
+                                    <paragraph leftIndent="2" rightIndent="2"/>
+                                </textElement>
                                 <textFieldExpression><![CDATA[$F{dni}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -198,8 +218,13 @@
                         </jr:tableHeader>
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
-                                <reportElement x="0" y="0" width="54" height="30" uuid="1ff26fb5-aeef-46ec-8f9e-619b5e9b3138"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <reportElement x="0" y="0" width="54" height="30" uuid="1ff26fb5-aeef-46ec-8f9e-619b5e9b3138">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <textElement verticalAlignment="Middle">
+                                    <paragraph leftIndent="2" rightIndent="2"/>
+                                </textElement>
                                 <textFieldExpression><![CDATA[$F{domicilio}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -212,13 +237,18 @@
                                 <textElement textAlignment="Center" verticalAlignment="Middle">
                                     <font isBold="true"/>
                                 </textElement>
-                                <text><![CDATA[Poblacion]]></text>
+                                <text><![CDATA[Población]]></text>
                             </staticText>
                         </jr:tableHeader>
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
-                                <reportElement x="0" y="0" width="54" height="30" uuid="3a5fa664-2b49-432d-8ded-e743287fe62e"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <reportElement x="0" y="0" width="54" height="30" uuid="3a5fa664-2b49-432d-8ded-e743287fe62e">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <textElement verticalAlignment="Middle">
+                                    <paragraph leftIndent="2" rightIndent="2"/>
+                                </textElement>
                                 <textFieldExpression><![CDATA[$F{poblacion}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -236,8 +266,13 @@
                         </jr:tableHeader>
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
-                                <reportElement x="0" y="0" width="54" height="30" uuid="68655aa5-0e69-4f15-9ad6-17a03d722f8a"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <reportElement x="0" y="0" width="54" height="30" uuid="68655aa5-0e69-4f15-9ad6-17a03d722f8a">
+                                    <property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+                                    <property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+                                </reportElement>
+                                <textElement verticalAlignment="Middle">
+                                    <paragraph leftIndent="2" rightIndent="2"/>
+                                </textElement>
                                 <textFieldExpression><![CDATA[$F{provincia}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
@@ -256,7 +291,7 @@
                         <jr:detailCell style="Table_TD" height="30">
                             <textField>
                                 <reportElement x="0" y="0" width="54" height="30" uuid="d0439c7d-f2d9-4b50-9b0d-10fcae2ab0f7"/>
-                                <textElement verticalAlignment="Middle"/>
+                                <textElement textAlignment="Center" verticalAlignment="Middle"/>
                                 <textFieldExpression><![CDATA[$F{numHistoriaClinica}]]></textFieldExpression>
                             </textField>
                         </jr:detailCell>
