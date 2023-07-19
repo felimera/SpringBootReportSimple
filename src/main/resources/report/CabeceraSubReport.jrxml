@@ -15,23 +15,36 @@
 	</queryString>
 	<field name="tituloPrincipal" class="java.lang.String"/>
 	<detail>
-		<band height="57">
-			<textField>
-				<reportElement x="250" y="0" width="250" height="30" uuid="588b38ea-ff6a-4b51-bfe1-d116a186f5c7">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+		<band height="50">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="250" y="0" width="305" height="50" uuid="588b38ea-ff6a-4b51-bfe1-d116a186f5c7">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
-				<textElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="20" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tituloPrincipal}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="0" width="250" height="30" uuid="dd592eea-f5a8-4c3d-af2e-d43879eacbef">
+				<reportElement x="0" y="0" width="250" height="50" uuid="dd592eea-f5a8-4c3d-af2e-d43879eacbef">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<textElement>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="20" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Titulo de prueba]]></text>
