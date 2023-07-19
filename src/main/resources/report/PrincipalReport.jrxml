@@ -7,6 +7,8 @@
 	<property name="net.sf.jasperreports.export.xls.ignore.cell.border" value="false"/>
 	<parameter name="tituloReport" class="net.sf.jasperreports.engine.JasperReport"/>
 	<parameter name="subreportParameter" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="pacienteReport" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="pacienteParameter" class="java.util.Map"/>
 	<field name="firstName" class="java.lang.String"/>
 	<field name="lastName" class="java.lang.String"/>
 	<field name="salary" class="java.lang.String"/>
@@ -84,6 +86,16 @@
 				<text><![CDATA[Salario :]]></text>
 			</staticText>
 		</band>
-		<band height="23"/>
+		<band height="70">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="70" uuid="c1539034-6e73-47bf-ac7c-64a198b241c6">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<parametersMapExpression><![CDATA[$P{pacienteParameter}]]></parametersMapExpression>
+				<dataSourceExpression><![CDATA[new JREmptyDataSource()]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{pacienteReport}]]></subreportExpression>
+			</subreport>
+		</band>
 	</detail>
 </jasperReport>
